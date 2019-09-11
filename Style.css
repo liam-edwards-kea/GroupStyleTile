@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
+
 :root {
-    --primary-color: mediumpurple;
-    --secondary-color: mediumslateblue;
+    --primary-color: #007BA7;
+    --secondary-color: #40826D;
     --tertiary-color: mediumseagreen;
     --fourth-color: mediumaquamarine;
+    --primary-font: 'quicksand';
+    --secondary-font: 'Nanum Myeongjo';
 }
-
 
 header {
     background-color: var(--primary-color);
@@ -22,7 +26,7 @@ header {
 }
 
 header > h1 {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .color {
@@ -67,10 +71,13 @@ header > h1 {
 
 .typo1 {
     font-size: 40px;
+    font-family: var(--primary-font);
+    font-weight: 200;
 }
 
 .typo2 {
     font-size: 25px;
+    font-family: var(--secondary-font);
 }
 
 .p {
@@ -88,13 +95,43 @@ header > h1 {
     justify-content: center;
 }
 
-.btn1 {}
+.btn1 {
+    background-color: var(--tertiary-color);
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 5px 5px 5px grey;
+    margin-right: 1rem;
+}
 
-.btn:hover {}
+.btn1:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
 
-.btn2 {}
+.btn1:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(6px);
+}
 
-.btn2:hover {}
+.btn2 {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 5px 5px 5px grey;
+    margin-right: 1rem;
+}
+
+.btn2:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.btn2:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(6px);
+}
 
 .images {
     width: 250px;
@@ -103,6 +140,7 @@ header > h1 {
     position: relative;
     border-radius: 12px;
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 img {
