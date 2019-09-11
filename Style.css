@@ -1,5 +1,13 @@
+:root {
+    --primary-color: mediumpurple;
+    --secondary-color: mediumslateblue;
+    --tertiary-color: mediumseagreen;
+    --fourth-color: mediumaquamarine;
+}
+
+
 header {
-    background-color: mediumpurple;
+    background-color: var(--primary-color);
     padding: .5rem;
     font-size: 18px;
     font-weight: 500;
@@ -37,19 +45,19 @@ header > h1 {
 }
 
 .color1 {
-    background-color: mediumpurple;
+    background-color: var(--primary-color);
 }
 
 .color2 {
-    background-color: mediumslateblue;
+    background-color: var(--secondary-color);
 }
 
 .color3 {
-    background-color: mediumseagreen;
+    background-color: var(--tertiary-color);
 }
 
 .color4 {
-    background-color: mediumaquamarine;
+    background-color: var(--fourth-color);
 }
 
 .typography {
@@ -104,7 +112,7 @@ img {
 }
 
 footer {
-    background-color: mediumpurple;
+    background-color: var(--primary-color);
     padding: 1rem;
     font-size: 10px;
     font-weight: 500;
